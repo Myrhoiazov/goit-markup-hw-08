@@ -682,8 +682,13 @@ body {
 
 @media screen and (min-width: 1140px) {
   .hero__title {
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    letter-spacing: 0.06em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
   }
 }
 
