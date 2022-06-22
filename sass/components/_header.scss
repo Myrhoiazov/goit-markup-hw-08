@@ -12,12 +12,13 @@
   .header__wrapper {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
 
 
   .header__menu {
     display: none;
+
+    z-index: 2;
   
     background-color: transparent;
     border: none;
@@ -27,7 +28,7 @@
     cursor: pointer;
   
   
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: block;
       
     }
@@ -44,6 +45,7 @@
   .header__menu.is-open .icon__burger{
     display: none;
   }
+
   
   .menu__icon {
     fill: $black-brand-color;
