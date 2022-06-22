@@ -22,4 +22,17 @@
   .footer__logo {
     color: $white-brand-color;
     margin-bottom: 20px;
+
+   
+  }
+
+  .footer__adress {
+
+    .footer__logo{
+      @media screen and (max-width: 1139px){
+        display: block;
+        text-align: center;
+      }
+    }
+
   }

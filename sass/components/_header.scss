@@ -31,7 +31,7 @@
   }
 }
 
-.header__menu .icon__close {
+.header__menu.is-open .icon__burger {
   display: none;
 }
 
@@ -39,7 +39,7 @@
   display: block;
 }
 
-.header__menu.is-open .icon__burger {
+.header__menu .icon__close {
   display: none;
 }
 

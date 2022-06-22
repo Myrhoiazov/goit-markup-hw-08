@@ -8,15 +8,36 @@
 }
 
 .portfolio__items {
-  
-  @include centerFlex();
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-  margin-bottom: 50px;
-  margin-top: 0;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .portfolio__item {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 769px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .portfolio__btn {
-
   font-weight: 500;
   color: $black-brand-color;
   font-size: 16px;
@@ -46,39 +67,109 @@
 // Portfolio Card
 
 .portfolio__cards {
-  @include centerFlex($justCont: flex-start);
 
-  margin: -15px;
+  @media screen  and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
 }
 
-
 .card__item {
-  width: 370px;
+  @media screen and (max-width: 768px) {
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 1s ease;
 
-  border: 1px solid rgba(238, 238, 238, 1);
-  border-radius: 5px;
-  transform: scale(1);
-  transition: transform 1s ease;
+    cursor: pointer;
 
-  cursor: pointer;
+    border: 1px solid rgba(238, 238, 238, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  border: 1px solid rgba(238, 238, 238, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
 
-  margin: 15px;
+  }
 
-  &:nth-child(3n) {
+  @media screen and (min-width: 769px) {
+    width: calc((100% - 30px) / 2);
+
+    margin-right: 30px;
+
+
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 1s ease;
+
+    cursor: pointer;
+
+    border: 1px solid rgba(238, 238, 238, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 30px;
+
+    &:nth-child(2n){
     margin-right: 0;
+      
+    }
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+  @media screen and (min-width: 1140px) {
+    width: calc((100% - 2 * 30px) / 3);
+
+    margin-right: 30px;
+
+
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 1s ease;
+
+    cursor: pointer;
+
+    border: 1px solid rgba(238, 238, 238, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 30px;
+
+    &:nth-child(2n){
+    margin-right: 30px;
+      
+    }
+
+    &:nth-child(3n){
+      margin-right: 0;
+        
+      }
+
   }
 
-  &:hover {
-    box-shadow: 0 5px 15px rgba(117, 117, 117, 0.2);
-    transform: scale(1.01);
-  }
+  // border: 1px solid rgba(238, 238, 238, 1);
+  // border-radius: 5px;
+  // transform: scale(1);
+  // transition: transform 1s ease;
+
+  // cursor: pointer;
+
+  // border: 1px solid rgba(238, 238, 238, 1);
+  // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // margin: 15px;
+
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
+
+  // &:hover {
+  //   box-shadow: 0 5px 15px rgba(117, 117, 117, 0.2);
+  //   transform: scale(1.01);
+  // }
 }
 
 .card__inner {
@@ -137,11 +228,11 @@
     line-height: 2;
     letter-spacing: 0.06em;
     font-size: 18px;
-  
+
     color: $black-brand-color;
     margin-bottom: 4px;
   }
-  
+
   .card__subtitle {
     font-weight: 400;
     color: $grey-brand-color;
@@ -150,5 +241,3 @@
     font-size: 16px;
   }
 }
-
-
