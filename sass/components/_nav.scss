@@ -163,19 +163,47 @@
   letter-spacing: 0.02em;
   font-style: normal;
   text-decoration: none;
+    
+}
 
+
+.header__contact .contact__link{
+  &:first-child{
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      color: $blu-brand-color;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      font-style: normal;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+.contact__item:last-child .contact__link {
   @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
     color: $grey-brand-color;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-style: normal;
     text-decoration: none;
   }
+
 }
+
+
+
+
 
 .contact .contact__link:hover,
 .contact .contact__link:focus {
@@ -199,5 +227,41 @@
   & .icon__smartphone {
     width: 10px;
     height: 16px;
+  }
+}
+
+.header-social {
+  display: flex;
+  margin-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+.header-social__item:last-child {
+  padding-left: 10px;
+}
+
+.header-social__links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: $blu-brand-color;
+
+  text-decoration: none;
+
+  &:focus{
+    color: $grey-brand-color;
   }
 }

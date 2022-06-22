@@ -544,12 +544,26 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .contact .contact__link {
+  .header__contact .contact__link:first-child {
+    display: flex;
+    align-items: center;
+    color: #2196f3;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__item:last-child .contact__link {
     display: flex;
     align-items: center;
     color: #757575;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-style: normal;
@@ -582,6 +596,43 @@ body {
 .icon .icon__smartphone {
   width: 10px;
   height: 16px;
+}
+
+.header-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-social {
+    display: none;
+  }
+}
+
+.header-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-social__item:not(:last-child):not(:first-child) {
+  padding-left: 10px;
+}
+
+.header-social__item:last-child {
+  padding-left: 10px;
+}
+
+.header-social__links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.header-social__links:focus {
+  color: #757575;
 }
 
 .visually-hidden {
