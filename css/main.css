@@ -391,16 +391,20 @@ body {
   align-items: center;
   width: 100%;
   min-height: 60px;
-  display: none;
+  display: block;
+  transform: translateX(-100%);
+  transition: display 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .nav.is-open {
   display: block;
+  transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {
   .nav.is-open {
     display: flex;
+    transform: translateX(0);
   }
 }
 
@@ -419,6 +423,7 @@ body {
 @media screen and (min-width: 768px) {
   .nav {
     display: inline-flex;
+    transform: translateX(0);
   }
 }
 

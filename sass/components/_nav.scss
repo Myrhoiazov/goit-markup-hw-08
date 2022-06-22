@@ -4,24 +4,24 @@
   width: 100%;
   min-height: 60px;
 
-  display: none;
+  display: block;
+  transform: translateX(-100%);
+
+  transition: display 250ms ease-in-out, transform 250ms ease-in-out;
 
   &.is-open {
     display: block;
-    
+
+    transform: translateX(0);
 
     @media screen and (min-width: 768px) {
       display: flex;
-      
+      transform: translateX(0);
     }
   }
-
- 
 }
 
-
 .nav {
-
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
@@ -33,15 +33,13 @@
     padding-bottom: 48px;
 
     padding-left: 40px;
-
   }
 
   @media screen and (min-width: 768px) {
     display: inline-flex;
-
+    transform: translateX(0);
   }
 }
-
 
 .nav__items {
   list-style: none;
