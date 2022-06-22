@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
 }
 
 .nav__items {
@@ -60,6 +65,11 @@
 .header__contact {
   margin-left: auto;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
 }
 
 .header__contact .contact__item + .contact__item {

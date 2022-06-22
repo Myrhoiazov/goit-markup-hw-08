@@ -13,7 +13,7 @@
       <div class="container">
         <div class="header__wrapper">
           <a class="logo header__logo" href="index.html"><span>Web</span>Studio</a>
-          <nav class="nav">
+          <nav class="nav is-open" data-menu id="menu-container">
             <ul class="nav__items">
               <li class="nav__item">
                 <a class="nav__link primary" href="index.html">Студия</a>
@@ -44,6 +44,12 @@
                 >
               </li>
             </ul>
+            <button type="button" class="header__menu is-open" data-menu-button aria-controls="menu-container">
+              <svg  class="menu__icon" width="44" height="44" aria-label="Переключатель мобильного меню" aria-expanded="false">
+                <use class="icon__close" href="./images/icon/symbol-defs.svg#icon-close"></use>
+                <use class="icon__burger" href="./images/icon/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
         </div>
       </div>
     </header>

@@ -15,3 +15,43 @@
     flex-wrap: wrap;
   }
 
+
+  .header__menu {
+    display: none;
+  
+    background-color: transparent;
+    border: none;
+  
+    margin-left: auto;
+  
+    cursor: pointer;
+  
+  
+    @media screen and (max-width: 768px) {
+      display: block;
+      
+    }
+  }
+  
+  .header__menu  .icon__close{
+    display: none;
+  }
+  
+  .header__menu.is-open .icon__close{
+    display: block;
+  }
+  
+  .header__menu.is-open .icon__burger{
+    display: none;
+  }
+  
+  .menu__icon {
+    fill: $black-brand-color;
+  
+    &:hover {
+      fill: $blu-brand-color;
+      
+    }
+    
+  }
+  
