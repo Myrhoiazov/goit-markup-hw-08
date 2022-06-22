@@ -1,24 +1,51 @@
 .footer {
   background-color: $brand-color-footer;
-  padding: 60px 0;
 }
 
 .footer__wrapper {
-  display: flex;
-  align-items: baseline;
+  
+  
+  @media screen and (max-width: 767px){
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px){
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // text-align: center;
+  }
+
+  @media screen and (min-width: 1140px){
+    padding: 94px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 
 .footer__contact {
-
+  
   .contact__item {
     margin-bottom: 9px;
+    @media screen and (max-width: 1139px){
+      text-align: center;
+    }
 
     &:last-child {
       margin-bottom: 0;
   }
 
   .contact__link {
+    display: inline-block;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -35,6 +62,12 @@
     color: $white-brand-color;
   }
 
+  @media screen and (max-width: 1139px){
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+
 }
 
 
@@ -42,7 +75,20 @@
 
 
 .footer__social {
-  margin-left: 70px;
+  margin-left: 0;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px){
+    margin-left: 70px;
+    margin-bottom: 0;
+
+  }
+
+  @media screen and (min-width: 1140px){
+    margin-left: 70px;
+    margin-bottom: 0;
+
+  }
 
 }
 
@@ -97,7 +143,17 @@
 /* Footer - form */
 
 .footer__form {
-  margin-left: auto;
+  
+
+  @media screen and (min-width: 768px){
+    margin-left: 0;
+
+  }
+
+  @media screen and (min-width: 1140px){
+    margin-left: auto;
+
+  }
 }
 
 .subscribe__input {
@@ -118,6 +174,13 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1140px){
+  margin-bottom: 0;
+
+  }
 }
 .subscribe__btn {
   display: inline-flex;

@@ -296,7 +296,13 @@ body {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1140px) {
+  .title {
+    margin-bottom: 50px;
+  }
 }
 
 .header {
@@ -851,24 +857,68 @@ body {
 
 .our-team {
   background-color: #f5f4fa;
-  padding: 94px 0;
 }
 
-.our-team__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+@media screen and (max-width: 1139px) {
+  .our-team {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .our-team {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin: 15px;
+  margin-bottom: 30px;
   background-color: #fff;
+}
+
+.team__item:last-child {
+  margin-bottom: 0;
 }
 
 .team__item img {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .team__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .team__item {
+    margin-bottom: 0;
+    width: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+  }
+  .team__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .team__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .our-team__content {
@@ -935,11 +985,23 @@ body {
 
 .our-partner {
   background-color: #fff;
-  padding: 94px 0;
+}
+
+@media screen and (max-width: 1139px) {
+  .our-partner {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .our-partner {
+    padding: 94px 0;
+  }
 }
 
 .our-partner__items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: -15px;
   color: #757575;
@@ -1115,16 +1177,45 @@ body {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 0;
 }
 
-.footer__wrapper {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer__wrapper {
+    padding: 94px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .footer__contact .contact__item {
   margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1139px) {
+  .footer__contact .contact__item {
+    text-align: center;
+  }
 }
 
 .footer__contact .contact__item:last-child {
@@ -1132,6 +1223,7 @@ body {
 }
 
 .footer__contact .contact__item .contact__link {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -1144,8 +1236,30 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1139px) {
+  .footer__contact {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .footer__social {
-  margin-left: 70px;
+  margin-left: 0;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer__social {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__title {
@@ -1192,8 +1306,16 @@ body {
 }
 
 /* Footer - form */
-.footer__form {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .footer__form {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer__form {
+    margin-left: auto;
+  }
 }
 
 .subscribe__input {
@@ -1210,6 +1332,13 @@ body {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1140px) {
+  .subscribe__input {
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__btn {

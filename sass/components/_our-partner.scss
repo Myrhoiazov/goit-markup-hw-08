@@ -1,9 +1,17 @@
 .our-partner {
   background-color: $white-brand-color;
-  padding: 94px 0;
+
+  @media screen and (max-width: 1139px){
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1140px){
+    padding: 94px 0;
+  }
 }
 .our-partner__items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 
   margin: -15px;
