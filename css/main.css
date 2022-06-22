@@ -494,14 +494,7 @@ body {
 }
 
 .header__contact {
-  display: flex;
   margin-left: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .header__contact {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 1140px) {
