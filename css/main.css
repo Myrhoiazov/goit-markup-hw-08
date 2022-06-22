@@ -1118,6 +1118,21 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .portfolio__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card__item {
     border: 1px solid #eeeeee;

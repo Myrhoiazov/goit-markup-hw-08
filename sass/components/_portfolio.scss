@@ -74,6 +74,20 @@
     
   }
 
+  @media screen  and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  @media screen  and (min-width: 769px){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+
 }
 
 .card__item {
