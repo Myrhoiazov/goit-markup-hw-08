@@ -809,7 +809,7 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1139px) {
+@media screen and (max-width: 1140px) {
   .progress {
     display: none;
   }
