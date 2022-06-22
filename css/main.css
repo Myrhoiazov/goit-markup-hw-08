@@ -668,7 +668,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1139px) {
   .hero__title {
     font-weight: 900;
     font-size: 26px;
