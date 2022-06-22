@@ -1,0 +1,43 @@
+.social {
+    display: flex;
+    justify-content: center;
+  }
+
+.social__item{
+  margin-left: 10px;
+
+  &:first-child {
+    margin: 0;
+    }
+
+}
+  
+  .social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $blu-brand-color;
+    }
+  }  
+  
+  .social__icon {
+    width: 20px;
+    height: 20px;
+    fill: rgba(175, 177, 184, 1);
+
+    .social__link:hover &,
+    .social__link:focus & {
+    fill: $white-brand-color;
+  }
+  }
+  
+  

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto';
+    color: $black-brand-color;
+    background-color: $white-brand-color;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  
+    margin-bottom: 50px;
+  }
+  
+
+  @mixin centerFlex ($type: flex, $justCont: center, $Wrap: wrap) {
+  display: $type;
+  justify-content: $justCont;
+  flex-wrap: $Wrap;
+    
+  }

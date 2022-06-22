@@ -1,0 +1,323 @@
+.box-model {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1);
+  }
+}
+
+.form {
+  position: relative;
+  border-radius: 20px;
+  padding: 40px;
+
+  max-width: 528px;
+  width: 100%;
+
+  background-color: $white-brand-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .box-model.is-hidden & {
+    transform: scale(0);
+  }
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $black-brand-color;
+
+  margin-bottom: 12px;
+}
+
+.form__field {
+  position: relative;
+
+  display: block;
+  width: 100%;
+
+  color: #fff;
+  color: $black-brand-color;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+
+  padding: 11px 0;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    border-color: $blu-brand-color;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: $blu-brand-color;
+  }
+}
+
+.form__label {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $grey-brand-color;
+
+  margin-bottom: 4px;
+
+  .form__field:focus-within & {
+    color: $blu-brand-color;
+  }
+}
+
+.textarea {
+  position: relative;
+}
+
+.textarea__label {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $grey-brand-color;
+
+  margin-bottom: 4px;
+
+  .form__field:focus-within & {
+    color: $blu-brand-color;
+  }
+}
+
+.form__area {
+  display: block;
+  height: 120px;
+  padding: 12px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  resize: none;
+}
+
+.form__icon {
+  display: inline-block;
+  position: absolute;
+
+  top: 55%;
+  left: 14px;
+
+  width: 18px;
+  height: 18px;
+}
+
+.icon {
+  width: 15px;
+  height: 12px;
+
+  .form__field:focus-within & {
+  fill: $blu-brand-color;
+}
+}
+
+.form__tooltip {
+  color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+
+  font-size: 12px;
+
+  display: inline-block;
+  position: absolute;
+  top: -20%;
+  left: -250px;
+  min-width: 200px;
+
+  opacity: 0;
+
+  transition: opacity 500ms ease 500ms;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+  }
+
+  &::after {
+    border-top: 10px solid transparent;
+    bottom: -19px;
+  }
+
+  .form__field:hover & {
+    opacity: 1;
+  }
+}
+
+.form__chekbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  &:focus {
+    border: 1px solid $blu-brand-color;
+  }
+}
+
+.chekbox__icon {
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 4px;
+
+  border: 2px solid $grey-brand-color;
+
+  background-color: transparent;
+  transition: background-color 250ms ease;
+
+  .chekbox__input:focus ~ & {
+    border: 1px solid $blu-brand-color;
+  }
+
+  .chekbox__input:checked ~ & {
+    background-color: $blu-brand-color;
+    border: transparent;
+
+    background-image: url(/images/box-modal/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-origin: border-box;
+  }
+}
+
+.chekbox__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+
+  color: $grey-brand-color;
+
+  margin-left: 8px;
+}
+.chekbox__text-accent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+
+  color: $blu-brand-color;
+}
+
+.form__btn {
+  display: block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: $white-brand-color;
+
+  padding: 10px 56px;
+
+  background-color: $blu-brand-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: rgb(18, 18, 18);
+  }
+}
+
+.closed {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.closed__icon {
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .closed:hover &,
+  .closed:focus & {
+    fill: $blu-brand-color;
+  }
+}

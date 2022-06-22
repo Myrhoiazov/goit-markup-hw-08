@@ -1,0 +1,159 @@
+.footer {
+  background-color: $brand-color-footer;
+  padding: 60px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+
+.footer__contact {
+
+  .contact__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+  }
+
+  .contact__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  
+    text-decoration: none;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+  }
+
+  & .footer__map {
+    color: $white-brand-color;
+  }
+
+}
+
+
+// Footer-Social
+
+
+.footer__social {
+  margin-left: 70px;
+
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  color: $white-brand-color;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.footer-social .social__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-social .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: currentColor;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social .social__icon  {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-social .social__link:hover,
+.footer-social .social__link:focus {
+  background-color: $blu-brand-color;
+}
+
+
+/* Footer - form */
+
+.footer__form {
+  margin-left: auto;
+}
+
+.subscribe__input {
+  display: inline-block;
+
+  width: 358px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.subscribe__btn {
+  display: inline-flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: $white-brand-color;
+  background-color: $blu-brand-color;
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 28px;
+  margin-left: 12px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: rgb(18, 18, 18);
+  }
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+
+  fill: $white-brand-color;
+}
