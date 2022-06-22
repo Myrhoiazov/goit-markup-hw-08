@@ -522,6 +522,10 @@ body {
   }
 }
 
+.contact__item:first-child {
+  margin-bottom: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .contact__item:first-child {
     margin-bottom: 10px;
@@ -557,9 +561,6 @@ body {
     letter-spacing: 0.02em;
     font-style: normal;
     text-decoration: none;
-  }
-  .contact .contact__link:first-child {
-    margin-bottom: 32px;
   }
 }
 

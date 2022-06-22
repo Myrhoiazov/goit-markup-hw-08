@@ -143,7 +143,10 @@
 }
 
 
-.contact__item{
+.contact__item {
+  &:first-child {
+    margin-bottom: 32px;
+  }
   @media screen and (min-width: 768px) {
     &:first-child {
       margin-bottom: 10px;
@@ -156,7 +159,6 @@
     }
   }
 }
-
 
 
 .contact .contact__link {
@@ -180,9 +182,7 @@
     letter-spacing: 0.02em;
     font-style: normal;
     text-decoration: none;
-    &:first-child {
-      margin-bottom: 32px;
-    }
+    
   }
 }
 
