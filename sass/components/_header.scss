@@ -1,59 +1,52 @@
 .header {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(236, 236, 236, 1);
-  
-    background-color: $white-brand-color;
-  }
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 
-  .header__wrapper {
-    display: flex;
-    align-items: center;
-  }
+  background-color: $white-brand-color;
+}
 
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
 
-  .header__menu {
-    display: none;
+.header__menu {
+  display: none;
 
-    z-index: 2;
-  
-    background-color: transparent;
-    border: none;
-  
-    margin-left: auto;
-  
-    cursor: pointer;
-  
-  
-    @media screen and (max-width: 767px) {
-      display: block;
-      
-    }
-  }
-  
-  .header__menu  .icon__close{
-    display: none;
-  }
-  
-  .header__menu.is-open .icon__close{
+  z-index: 2;
+
+  background-color: transparent;
+  border: none;
+
+  margin-left: auto;
+
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
     display: block;
   }
-  
-  .header__menu.is-open .icon__burger{
-    display: none;
-  }
+}
 
-  
-  .menu__icon {
-    fill: $black-brand-color;
-  
-    &:hover {
-      fill: $blu-brand-color;
-      
-    }
-    
+.header__menu .icon__close {
+  display: none;
+}
+
+.header__menu.is-open .icon__close {
+  display: block;
+}
+
+.header__menu.is-open .icon__burger {
+  display: none;
+}
+
+.menu__icon {
+  fill: $black-brand-color;
+
+  &:hover {
+    fill: $blu-brand-color;
   }
-  
+}
