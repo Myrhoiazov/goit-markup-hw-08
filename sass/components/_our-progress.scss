@@ -1,4 +1,8 @@
 .progress {
+  @media screen and (max-width: 1139px) {
+    display: none;
+    
+  }
     padding-bottom: 94px;
   }
 
@@ -10,10 +14,9 @@
     position: relative;
 
     max-width: calc((100% - 2 * 30px) / 3);
-    width: 100%;
     margin-right: 30px;
 
-    :nth-child(3) {
+    :nth-child(3n) {
       margin-right: 0;
     }
   }

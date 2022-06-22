@@ -809,6 +809,12 @@ body {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1139px) {
+  .progress {
+    display: none;
+  }
+}
+
 .progress__items {
   display: flex;
 }
@@ -816,11 +822,10 @@ body {
 .progress__item {
   position: relative;
   max-width: calc((100% - 2 * 30px) / 3);
-  width: 100%;
   margin-right: 30px;
 }
 
-.progress__item :nth-child(3) {
+.progress__item :nth-child(3n) {
   margin-right: 0;
 }
 
