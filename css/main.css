@@ -664,17 +664,27 @@ body {
 @media screen and (max-width: 768px) {
   .hero {
     margin-top: 0;
+    padding: 118px 0;
   }
 }
 
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero__btn {
@@ -697,24 +707,57 @@ body {
   background-color: #121212;
 }
 
-.our-work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1139px) {
+  .our-work {
+    padding: 60px 0;
+  }
 }
 
-.our-work__list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 1140px) {
+  .our-work {
+    padding: 94px 0;
+  }
 }
 
-.our-work__link {
-  width: 270px;
-  list-style: none;
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .our-work__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.our-work__linkk:nth-child(4) {
-  margin: 0;
+@media screen and (min-width: 480px) {
+  .our-work__link {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-work__link {
+    text-align: left;
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .our-work__link:nth-child(2n) {
+    margin-right: 0;
+  }
+  .our-work__link:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .our-work__link {
+    width: calc((100% - 3* 30px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .our-work__link:nth-child(2) {
+    margin-right: 30px;
+  }
+  .our-work__link:nth-child(4) {
+    margin-right: 0;
+  }
 }
 
 .our-work__img {
@@ -736,6 +779,12 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .our-work__title {
+    text-align: center;
+  }
 }
 
 .our-work__subtitle {

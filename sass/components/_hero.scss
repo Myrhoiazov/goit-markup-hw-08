@@ -20,20 +20,30 @@
 
   @media screen and (max-width: 768px) {
     margin-top: 0;
+    padding: 118px 0;
     
   }
 }
 
   .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    @media screen and (min-width: 480px) {
+      font-weight: 900;
+    font-size: 26px;
+    line-height: 1.7;
     letter-spacing: 0.06em;
     color: $white-brand-color;
   
     text-transform: uppercase;
   
     margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1140px) {
+    font-size: 44px;
+    line-height: 1.4;
+    }
+
+    
   }
   
   .hero__btn {

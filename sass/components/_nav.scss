@@ -163,12 +163,10 @@
   letter-spacing: 0.02em;
   font-style: normal;
   text-decoration: none;
-    
 }
 
-
-.header__contact .contact__link{
-  &:first-child{
+.header__contact .contact__link {
+  &:first-child {
     @media screen and (max-width: 767px) {
       display: flex;
       align-items: center;
@@ -183,9 +181,6 @@
   }
 }
 
-
-
-
 .contact__item:last-child .contact__link {
   @media screen and (max-width: 767px) {
     display: flex;
@@ -198,12 +193,7 @@
     font-style: normal;
     text-decoration: none;
   }
-
 }
-
-
-
-
 
 .contact .contact__link:hover,
 .contact .contact__link:focus {
@@ -261,7 +251,7 @@
 
   text-decoration: none;
 
-  &:focus{
+  &:focus {
     color: $grey-brand-color;
   }
 }
