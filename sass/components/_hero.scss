@@ -19,13 +19,14 @@
   background-size: cover;
 
   @media screen and (max-width: 768px) {
-    margin-top: 0;
+    margin-top: 50px;
     padding: 118px 0;
   }
 }
 
 .hero__title {
   @media screen and (max-width: 1139px) {
+    text-align: center;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.7;

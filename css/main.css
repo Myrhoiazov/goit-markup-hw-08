@@ -310,7 +310,7 @@ body {
   z-index: 999;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   border-bottom: 1px solid #ececec;
   background-color: #fff;
 }
@@ -389,8 +389,8 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  max-width: 100%;
   width: 100%;
+  min-height: 60px;
   display: none;
 }
 
@@ -404,22 +404,21 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: white;
+    background-color: #fff;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: inline-flex;
   }
 }
 
@@ -676,13 +675,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero {
-    margin-top: 0;
+    margin-top: 50px;
     padding: 118px 0;
   }
 }
 
 @media screen and (max-width: 1139px) {
   .hero__title {
+    text-align: center;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.7;

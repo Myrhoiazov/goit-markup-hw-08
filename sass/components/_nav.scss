@@ -1,43 +1,47 @@
 .nav {
   display: flex;
   align-items: center;
-  max-width: 100%;
   width: 100%;
+  min-height: 60px;
 
   display: none;
 
   &.is-open {
     display: block;
-
+    
 
     @media screen and (min-width: 768px) {
       display: flex;
+      
     }
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
-
+ 
 }
 
+
 .nav {
-  
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
 
-    background-color: white;
+    background-color: $white-brand-color;
 
     padding-top: 48px;
     padding-bottom: 48px;
 
     padding-left: 40px;
+
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+
   }
 }
+
 
 .nav__items {
   list-style: none;
