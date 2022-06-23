@@ -162,43 +162,41 @@
 }
 
 .form__tooltip {
-  @media screen and (min-width: 450px) {
-    color: #fff;
-    border: 1px solid transparent;
-    background-color: $blu-brand-color;
-    border-radius: 10px;
-    padding: 10px;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: $blu-brand-color;
+  border-radius: 10px;
+  padding: 10px;
 
-    font-size: 12px;
+  font-size: 12px;
 
-    display: inline-block;
+  display: inline-block;
+  position: absolute;
+  top: -60%;
+  left: 30px;
+  min-width: 200px;
+
+  opacity: 0;
+
+  transition: opacity 500ms ease 500ms;
+
+  &::before,
+  &::after {
+    content: '';
     position: absolute;
-    top: -60%;
-    left: 30px;
-    min-width: 200px;
+    left: 10px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid $blu-brand-color;
+  }
 
-    opacity: 0;
+  &::after {
+    border-top: 10px solid transparent;
+    bottom: -19px;
+  }
 
-    transition: opacity 500ms ease 500ms;
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 10px;
-      bottom: -20px;
-      border: 10px solid transparent;
-      border-top: 10px solid $blu-brand-color;
-    }
-
-    &::after {
-      border-top: 10px solid transparent;
-      bottom: -19px;
-    }
-
-    .form__field:hover & {
-      opacity: 1;
-    }
+  .form__field:hover & {
+    opacity: 1;
   }
 }
 
