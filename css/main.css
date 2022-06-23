@@ -305,6 +305,14 @@ body {
   }
 }
 
+img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: auto;
+}
+
 .header {
   position: fixed;
   z-index: 999;
@@ -413,6 +421,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    max-height: auto;
     background-color: #fff;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -850,6 +860,8 @@ body {
 
 .progress__img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .progress__text {
