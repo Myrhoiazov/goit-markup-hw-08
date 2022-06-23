@@ -33,7 +33,8 @@
                   <svg class="icon icon__envelope">
                     <use
                       href="./images/icon/symbol-defs.svg#icon-envelope"
-                    ></use></svg>info@devstudio.com</a
+                    ></use></svg
+                  >info@devstudio.com</a
                 >
               </li>
 
@@ -188,33 +189,96 @@
 
           <ul class="progress__items">
             <li class="progress__item">
-              <img
-                class="progress__img"
-                src="./images/img1.jpg"
-                alt="Картинка компьютера 1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/our-work/card_1/img.jpg 1x,
+                  ./image/desktop/our-work/card_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <!-- <source
+                  srcset="
+                  ./image/tablet/user_1/img.jpg 1x,
+                  ./image/tablet/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_1/img.jpg 1x,
+                  ./image/mobile/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                /> -->
+                <img
+                  src="./image/desktop/our-work/card_1/img.jpg"
+                  alt="Картинка компьютера" aria-label="Картинка компьютера"
+                />
+              </picture>
               <h3 class="progress__text">Десктопные приложения</h3>
             </li>
             <li class="progress__item">
-              <img
-                class="progress__img"
-                src="./images/img2.jpg"
-                alt="Картинка компьютера 2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/our-work/card_2/img.jpg 1x,
+                  ./image/desktop/our-work/card_2/img@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <!-- <source
+                  srcset="
+                  ./image/tablet/user_1/img.jpg 1x,
+                  ./image/tablet/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_1/img.jpg 1x,
+                  ./image/mobile/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                /> -->
+                <img
+                  src="./image/desktop/our-work/card_2/img.jpg"
+                  alt="Картинка компьютера" aria-label="Картинка компьютера"
+                />
+              </picture>
               <h3 class="progress__text">Мобильные приложения</h3>
             </li>
             <li class="progress__item">
-              <img
-                class="progress__img"
-                src="./images/img3.jpg"
-                alt="Картинка компьютера 3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/our-work/card_3/img.jpg 1x,
+                  ./image/desktop/our-work/card_3/img@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <!-- <source
+                  srcset="
+                  ./image/tablet/user_1/img.jpg 1x,
+                  ./image/tablet/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_1/img.jpg 1x,
+                  ./image/mobile/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                /> -->
+                <img
+                  src="./image/desktop/our-work/card_3/img.jpg"
+                  alt="Картинка компьютера" aria-label="Картинка компьютера"
+                />
+              </picture>
               <h3 class="progress__text">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -226,12 +290,34 @@
           <h2 class="our-team__title title">Наша команда</h2>
           <ul class="our-team__items">
             <li class="team__item">
-              <img
-                src="./images/img-team1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/user_1/img-1.jpg 1x,
+                  ./image/desktop/user_1/img.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <source
+                  srcset="
+                  ./image/tablet/user_1/img.jpg 1x,
+                  ./image/tablet/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_1/img.jpg 1x,
+                  ./image/mobile/user_1/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./image/tablet/user_1/img.jpg.jpg"
+                  alt="Игорь Демьяненко" aria-label="Игорь Демьяненко"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__text">Игорь Демьяненко</h3>
                 <p class="our-team__subtext">Product Designer</p>
@@ -279,12 +365,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-team2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/user_2/img-1.jpg 1x,
+                  ./image/desktop/user_2/img.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <source
+                  srcset="
+                  ./image/tablet/user_2/img.jpg 1x,
+                  ./image/tablet/user_2/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_2/img.jpg 1x,
+                  ./image/mobile/user_2/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./image/tablet/user_2/img.jpg.jpg"
+                  alt="Ольга Репина" aria-label="Ольга Репина"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__text">Ольга Репина</h3>
                 <p class="our-team__subtext">Product Designer</p>
@@ -333,12 +441,34 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img-team3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/user_3/img-1.jpg 1x,
+                  ./image/desktop/user_3/img.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <source
+                  srcset="
+                  ./image/tablet/user_3/img.jpg 1x,
+                  ./image/tablet/user_3/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_3/img.jpg 1x,
+                  ./image/mobile/user_3/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./image/tablet/user_3/img.jpg.jpg"
+                  alt="Николай Тарасов" aria-label="Николай Тарасов"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__text">Николай Тарасов</h3>
                 <p class="our-team__subtext">Marketing</p>
@@ -387,12 +517,34 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img-team4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./image/desktop/user_4/img-1.jpg 1x,
+                  ./image/desktop/user_4/img.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                
+                <source
+                  srcset="
+                  ./image/tablet/user_4/img.jpg 1x,
+                  ./image/tablet/user_4/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                  ./image/mobile/user_4/img.jpg 1x,
+                  ./image/mobile/user_4/img@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./image/tablet/user_4/img.jpg.jpg"
+                  alt="Михаил Ермаков" aria-label="Михаил Ермаков"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__text">Михаил Ермаков</h3>
                 <p class="our-team__subtext">UI Designer</p>
