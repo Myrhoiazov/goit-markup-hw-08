@@ -400,7 +400,7 @@ img {
   width: 100%;
   min-height: 60px;
   display: block;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: display 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
