@@ -162,7 +162,7 @@
 }
 
 .form__tooltip {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 450px) {
     color: #fff;
     border: 1px solid transparent;
     background-color: $blu-brand-color;
