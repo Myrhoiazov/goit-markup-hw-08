@@ -603,24 +603,24 @@ img {
   color: #2196f3;
 }
 
-.icon {
+.header__contact .icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
 @media screen and (max-width: 767px) {
-  .icon {
+  .header__contact .icon {
     margin-right: 0;
     display: none;
   }
 }
 
-.icon .icon__envelope {
+.header__contact .icon .icon__envelope {
   width: 16px;
   height: 12px;
 }
 
-.icon .icon__smartphone {
+.header__contact .icon .icon__smartphone {
   width: 10px;
   height: 16px;
 }
@@ -1709,37 +1709,37 @@ img {
   fill: #2196f3;
 }
 
-.form__tooltip {
-  color: #fff;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 12px;
-  display: inline-block;
-  position: absolute;
-  top: -20%;
-  left: -250px;
-  min-width: 200px;
-  opacity: 0;
-  transition: opacity 500ms ease 500ms;
-}
-
-.form__tooltip::before, .form__tooltip::after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  bottom: -20px;
-  border: 10px solid transparent;
-  border-top: 10px solid white;
-}
-
-.form__tooltip::after {
-  border-top: 10px solid transparent;
-  bottom: -19px;
-}
-
-.form__field:hover .form__tooltip {
-  opacity: 1;
+@media screen and (min-width: 767px) {
+  .form__tooltip {
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #2196f3;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    top: -60%;
+    left: 30px;
+    min-width: 200px;
+    opacity: 0;
+    transition: opacity 500ms ease 500ms;
+  }
+  .form__tooltip::before, .form__tooltip::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #2196f3;
+  }
+  .form__tooltip::after {
+    border-top: 10px solid transparent;
+    bottom: -19px;
+  }
+  .form__field:hover .form__tooltip {
+    opacity: 1;
+  }
 }
 
 .form__chekbox {
@@ -1770,7 +1770,7 @@ img {
 .chekbox__input:checked ~ .chekbox__icon {
   background-color: #2196f3;
   border: transparent;
-  background-image: url(/images/box-modal/icon-check.svg);
+  background-image: url(../images/box-modal/icon-check.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

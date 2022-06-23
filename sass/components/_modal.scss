@@ -157,45 +157,48 @@
   height: 12px;
 
   .form__field:focus-within & {
-  fill: $blu-brand-color;
-}
+    fill: $blu-brand-color;
+  }
 }
 
 .form__tooltip {
-  color: #fff;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  padding: 10px;
+  @media screen and (min-width: 767px) {
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: $blu-brand-color;
+    border-radius: 10px;
+    padding: 10px;
 
-  font-size: 12px;
+    font-size: 12px;
 
-  display: inline-block;
-  position: absolute;
-  top: -20%;
-  left: -250px;
-  min-width: 200px;
-
-  opacity: 0;
-
-  transition: opacity 500ms ease 500ms;
-
-  &::before,
-  &::after {
-    content: '';
+    display: inline-block;
     position: absolute;
-    right: 10px;
-    bottom: -20px;
-    border: 10px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-  }
+    top: -60%;
+    left: 30px;
+    min-width: 200px;
 
-  &::after {
-    border-top: 10px solid transparent;
-    bottom: -19px;
-  }
+    opacity: 0;
 
-  .form__field:hover & {
-    opacity: 1;
+    transition: opacity 500ms ease 500ms;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      bottom: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid $blu-brand-color;
+    }
+
+    &::after {
+      border-top: 10px solid transparent;
+      bottom: -19px;
+    }
+
+    .form__field:hover & {
+      opacity: 1;
+    }
   }
 }
 
@@ -232,7 +235,7 @@
     background-color: $blu-brand-color;
     border: transparent;
 
-    background-image: url(/images/box-modal/icon-check.svg);
+    background-image: url(../images/box-modal/icon-check.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
