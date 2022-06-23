@@ -838,7 +838,7 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
   .progress {
     display: none;
   }
