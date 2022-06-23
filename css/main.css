@@ -1132,13 +1132,15 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .portfolio__cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -1245,6 +1247,24 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 767px) {
+  .card__subtext {
+    padding: 70px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__subtext {
+    padding: 100px 24px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .card__subtext {
+    padding: 63px 24px;
+  }
+}
+
 .card__content {
   display: flex;
   flex-direction: column;
@@ -1258,6 +1278,7 @@ img {
   font-size: 18px;
   color: #212121;
   margin-bottom: 4px;
+  flex: 1 1 auto;
 }
 
 .card__content .card__subtitle {

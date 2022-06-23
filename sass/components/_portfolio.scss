@@ -69,12 +69,16 @@
 .portfolio__cards {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: flex;
+    justify-content: center;
+
     flex-wrap: wrap;
+    
   }
 
   @media screen and (min-width: 769px) {
@@ -194,6 +198,24 @@
   .card__item:hover & {
     transform: translateY(0);
   }
+
+  @media screen and (max-width: 767px) {
+
+  padding: 70px 24px;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+
+    padding: 100px 24px;
+      
+    }
+
+    @media screen and (min-width: 1140px) {
+
+      padding: 63px 24px;
+        
+      }
 }
 
 .card__content {
@@ -201,6 +223,7 @@
   flex-direction: column;
 
   padding: 20px 24px;
+
 
   .card__title {
     font-weight: 700;
@@ -210,6 +233,8 @@
 
     color: $black-brand-color;
     margin-bottom: 4px;
+
+    flex: 1 1 auto;
   }
 
   .card__subtitle {
@@ -218,6 +243,9 @@
     line-height: 1.8;
     letter-spacing: 0.03em;
     font-size: 16px;
+
+    
+
     
   }
 }
