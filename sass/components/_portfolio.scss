@@ -67,27 +67,21 @@
 // Portfolio Card
 
 .portfolio__cards {
-
-  @media screen  and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    
   }
 
-  @media screen  and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    
   }
 
-  @media screen  and (min-width: 769px){
+  @media screen and (min-width: 769px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
   }
-  
-
 }
 
 .card__item {
@@ -103,14 +97,12 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     margin-bottom: 30px;
-
   }
 
   @media screen and (min-width: 769px) {
     width: calc((100% - 30px) / 2);
 
     margin-right: 30px;
-
 
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 5px;
@@ -124,9 +116,8 @@
 
     margin-bottom: 30px;
 
-    &:nth-child(2n){
-    margin-right: 0;
-      
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 
@@ -135,7 +126,6 @@
 
     margin-right: 30px;
 
-
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 5px;
     transform: scale(1);
@@ -148,19 +138,15 @@
 
     margin-bottom: 30px;
 
-    &:nth-child(2n){
-    margin-right: 30px;
-      
+    &:nth-child(2n) {
+      margin-right: 30px;
     }
 
-    &:nth-child(3n){
+    &:nth-child(3n) {
       margin-right: 0;
-        
-      }
-
+    }
   }
 }
-
 
 .card__inner {
   position: relative;
@@ -211,6 +197,9 @@
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
+
   padding: 20px 24px;
 
   .card__title {
@@ -229,5 +218,6 @@
     line-height: 1.8;
     letter-spacing: 0.03em;
     font-size: 16px;
+    
   }
 }

@@ -749,7 +749,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .our-work__link {
     margin-bottom: 30px;
   }
@@ -760,6 +760,7 @@ body {
     text-align: left;
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
   .our-work__link:nth-child(2n) {
     margin-right: 0;
@@ -1233,6 +1234,8 @@ body {
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
   padding: 20px 24px;
 }
 

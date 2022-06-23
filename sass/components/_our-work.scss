@@ -23,7 +23,7 @@
 }
 
 .our-work__link {
-  @media screen and (min-width: 480px){
+  @media screen and (max-width: 767px){
 
   margin-bottom: 30px;
   }
@@ -33,6 +33,7 @@
     text-align: left;
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
+    margin-bottom: 30px;
 
     &:nth-child(2n) {
       margin-right: 0;
