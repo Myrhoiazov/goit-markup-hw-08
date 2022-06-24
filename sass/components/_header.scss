@@ -34,17 +34,28 @@
 
 
 
-.header__menu.is-open .icon__burger {
-  display: none;
-}
 
-.header__menu.is-open .icon__close {
+.header__menu.is-open .icon__burger {
   display: block;
 }
 
+.header__menu.is-open .icon__close {
+  display: none;
+
+}
+
 .header__menu .icon__close {
+  display: block;
+}
+
+.header__menu .icon__burger {
   display: none;
 }
+
+
+
+
+
 
 .menu__icon {
   fill: $black-brand-color;
