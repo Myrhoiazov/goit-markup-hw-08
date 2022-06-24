@@ -1804,7 +1804,7 @@ img {
 .chekbox__input:checked ~ .chekbox__icon {
   background-color: #2196f3;
   border: transparent;
-  background-image: url(../images/box-modal/icon-check.svg);
+  background-image: url(../image/box-modal/icon-check.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
