@@ -1619,7 +1619,7 @@ img {
   transform: scale(1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 400px) {
   .form {
     display: flex;
     flex-direction: column;
@@ -1640,7 +1640,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   .form {
     display: flex;
     flex-direction: column;
