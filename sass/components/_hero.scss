@@ -1,7 +1,10 @@
 .hero {
   text-align: center;
-  
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (max-width: 767px) {
+    
     margin-top: 50px;
     padding: 118px 0;
     background-image: linear-gradient(
@@ -32,6 +35,7 @@
   @media screen and (min-width: 768px) {
     margin-top: 80px;
     padding: 118px 0;
+    
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
@@ -89,8 +93,7 @@
 }
 
 .hero__title {
-  @media screen and (max-width: 1139px) {
-
+  @media screen and (max-width: 1140px) {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.7;

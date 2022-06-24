@@ -1,16 +1,7 @@
 .footer {
   background-color: $brand-color-footer;
-  @media screen and (max-width: 767px) {
-    padding: 60px 0;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 60px 0;
-  }
-
-  @media screen and (min-width: 1140px) {
-    padding: 94px 0;
-  }
+  padding: 60px 0;
+  
 }
 
 .footer__wrapper {
@@ -24,10 +15,11 @@
   @media screen and (min-width: 768px) and (max-width: 1139px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-around;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1140px) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -147,11 +139,15 @@
 
 .footer__form {
   .footer__title {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       text-align: center;
     }
 
     @media screen and (min-width: 960px) {
+      text-align: сутеук;
+    }
+
+    @media screen and (min-width: 1140px) {
       text-align: left;
     }
   }
@@ -196,7 +192,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1140px) {
     text-align: left;
   }
 

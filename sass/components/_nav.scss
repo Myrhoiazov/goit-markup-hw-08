@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   align-items: center;
+  max-width: 100%;
   width: 100%;
   min-height: 60px;
 
@@ -17,7 +18,13 @@
     @media screen and (min-width: 768px) {
       display: flex;
       transform: translateX(0);
+      overflow: hidden;
     }
+  }
+
+  &.is-open body {
+    overflow: hidden;
+    user-select: none;
   }
 }
 
@@ -27,7 +34,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-height: auto;
+    height: auto;
 
     background-color: $white-brand-color;
 

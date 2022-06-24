@@ -17,13 +17,19 @@
 
   margin: -15px;
   color: $grey-brand-color;
-  list-style: none;
 
-  @media screen and (min-width: 767px) and (max-width: 1200px) {
-    max-width: 760px;
+  @media screen and (max-width: 767px) {
+    width: 460px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .our-partner__item {
