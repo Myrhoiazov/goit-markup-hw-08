@@ -291,23 +291,21 @@ body {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 480px) {
   .container {
-    margin: 0 auto;
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    margin: 0 auto;
+    width: 768px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
   }
 }
 
@@ -320,7 +318,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -552,7 +550,7 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .header__contact {
     display: flex;
   }
@@ -564,7 +562,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .header__contact .contact__item + .contact__item {
     margin-left: 30px;
   }
@@ -580,7 +578,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1140px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .contact__item:first-child {
     margin-bottom: 0;
   }
@@ -707,10 +705,13 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 767px) {
   .hero {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     padding: 118px 0;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero/header_img.jpg);
@@ -720,7 +721,7 @@ img {
   }
 }
 
-@media screen and (min-width: 400px) and (min-device-pixel-ratio: 2), screen and (min-width: 400px) and (min-resolution: 192dpi), screen and (min-width: 400px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero/header_img@2x.jpg);
     background-position: center;
@@ -749,7 +750,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
@@ -761,7 +762,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) and (min-device-pixel-ratio: 2), screen and (min-width: 1140px) and (min-resolution: 192dpi), screen and (min-width: 1140px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/desktop/hero/header_img@2x.jpg);
     background-position: center;
@@ -770,7 +771,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-weight: 900;
     font-size: 26px;
@@ -782,7 +783,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
