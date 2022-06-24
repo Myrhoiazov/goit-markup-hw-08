@@ -15,7 +15,7 @@ body {
   .title {
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     letter-spacing: 0.03em;
   
@@ -23,6 +23,7 @@ body {
 
     @media screen and (min-width: 1140px){
       margin-bottom: 50px;
+      font-size: 36px;
     }
   }
   
