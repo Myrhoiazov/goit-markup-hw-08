@@ -7,6 +7,7 @@
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 
   background-color: $white-brand-color;
+
 }
 
 .header__wrapper {
@@ -30,6 +31,8 @@
     display: block;
   }
 }
+
+
 
 .header__menu.is-open .icon__burger {
   display: none;
