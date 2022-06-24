@@ -1085,12 +1085,7 @@ img {
 
 .our-partner {
   background-color: #fff;
-}
-
-@media screen and (min-width: 767px) {
-  .our-partner {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
