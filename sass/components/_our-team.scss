@@ -1,14 +1,15 @@
 .our-team {
   background-color: rgba(245, 244, 250, 1);
 
-  @media screen and (max-width: 1139px){
+  @media screen and (min-width: 480px){
     padding: 60px 0;
   }
 
-  @media screen and (min-width: 1140px){
+  @media screen and (min-width: 1200px){
     padding: 94px 0;
   }
 }
+
 .our-team__items {
 
   @media screen and (min-width: 768px){
@@ -52,7 +53,7 @@
 
   }
 
-  @media screen and (min-width: 1140px){
+  @media screen and (min-width: 1200px){
     margin-bottom: 0;
 
     width: calc((100% - 3 * 30px) / 4);
