@@ -1,5 +1,12 @@
 .portfolio {
-  margin-top: 80px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1140px) {
+    margin-top: 80px;
+  }
+
+
+
 }
 
 .portfolio__body {
