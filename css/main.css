@@ -957,12 +957,7 @@ img {
 
 .our-team {
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 480px) {
-  .our-team {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
