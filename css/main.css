@@ -709,7 +709,7 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 400px) {
   .hero {
     margin-top: 50px;
     padding: 118px 0;
@@ -720,7 +720,7 @@ img {
   }
 }
 
-@media screen and (min-width: 460px) and (min-device-pixel-ratio: 2), screen and (min-width: 460px) and (min-resolution: 192dpi), screen and (min-width: 460px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 400px) and (min-device-pixel-ratio: 2), screen and (min-width: 400px) and (min-resolution: 192dpi), screen and (min-width: 400px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero/header_img@2x.jpg);
     background-position: center;
