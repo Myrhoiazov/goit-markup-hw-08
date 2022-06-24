@@ -1161,7 +1161,7 @@ img {
   margin-top: 56px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio {
     margin-top: 80px;
   }
@@ -1172,14 +1172,14 @@ img {
   padding-top: 60px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .portfolio__body {
     padding-bottom: 94px;
     padding-top: 94px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio__items {
     display: flex;
     justify-content: flex-start;
@@ -1189,7 +1189,7 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .portfolio__items {
     display: flex;
     justify-content: center;
@@ -1199,19 +1199,19 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .portfolio__items {
     margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio__items .portfolio__item {
     margin-bottom: 15px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .portfolio__items .portfolio__item {
     margin-bottom: 0;
   }
@@ -1269,7 +1269,7 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .card__item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -1289,7 +1289,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .card__item {
     width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
@@ -1356,18 +1356,17 @@ img {
 
 @media screen and (max-width: 767px) {
   .card__subtext {
-    padding: 70px 24px;
-    padding-top: 120px;
+    padding: 63px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .card__subtext {
-    padding: 77px 24px;
+    padding: 63px 24px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .card__subtext {
     padding: 63px 24px;
   }
