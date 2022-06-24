@@ -37,8 +37,8 @@
 }
 
 .our-partner__bg {
-  padding: 16px 32px;
-  width: 170px;
+  padding: 16px 60px;
+  width: 226px;
   height: 92px;
 
   background-color: $white-brand-color;
@@ -52,6 +52,12 @@
   &:hover,
   &:focus {
     border: 1px solid $blu-brand-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
   }
 }
 

@@ -1118,8 +1118,8 @@ img {
 }
 
 .our-partner__bg {
-  padding: 16px 32px;
-  width: 170px;
+  padding: 16px 60px;
+  width: 226px;
   height: 92px;
   background-color: #fff;
   border: 1px solid #afb1b8;
@@ -1130,6 +1130,14 @@ img {
 
 .our-partner__bg:hover, .our-partner__bg:focus {
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-partner__bg {
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .partner__logo {
@@ -1655,7 +1663,7 @@ img {
   transform: scale(0);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .form {
     max-width: 528px;
     width: 100%;
@@ -1834,19 +1842,17 @@ img {
   background-origin: border-box;
 }
 
-@media screen and (max-width: 767px) {
-  .chekbox__text {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin-left: 8px;
-  }
+.chekbox__text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .chekbox__text {
     display: inline-block;
     font-weight: 400;
@@ -1858,19 +1864,17 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .chekbox__text-accent {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: underline;
-    color: #2196f3;
-  }
+.chekbox__text-accent {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .chekbox__text-accent {
     display: inline-block;
     font-weight: 400;

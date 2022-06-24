@@ -45,7 +45,7 @@
     transform: scale(0);
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     max-width: 528px;
     width: 100%;
   }
@@ -253,8 +253,8 @@
 }
 
 .chekbox__text {
-  @media screen and (max-width: 767px) {
-    display: inline-block;
+
+  display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
@@ -263,9 +263,8 @@
     color: $grey-brand-color;
 
     margin-left: 8px;
-  }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
@@ -278,8 +277,7 @@
   }
 }
 .chekbox__text-accent {
-  @media screen and (max-width: 767px) {
-    display: inline-block;
+  display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
@@ -287,9 +285,8 @@
     text-decoration: underline;
 
     color: $blu-brand-color;
-  }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
