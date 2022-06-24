@@ -815,10 +815,8 @@ img {
   background-color: #121212;
 }
 
-@media screen and (min-width: 480px) {
-  .our-work {
-    padding: 60px 0;
-  }
+.our-work {
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
