@@ -1081,6 +1081,14 @@ img {
   list-style: none;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .our-partner__items {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .our-partner__item {
   display: flex;
   justify-content: center;

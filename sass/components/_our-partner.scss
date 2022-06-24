@@ -1,14 +1,15 @@
 .our-partner {
   background-color: $white-brand-color;
 
-  @media screen and (max-width: 1139px){
+  @media screen and (max-width: 1139px) {
     padding: 60px 0;
   }
 
-  @media screen and (min-width: 1140px){
+  @media screen and (min-width: 1140px) {
     padding: 94px 0;
   }
 }
+
 .our-partner__items {
   display: flex;
   justify-content: center;
@@ -17,6 +18,12 @@
   margin: -15px;
   color: $grey-brand-color;
   list-style: none;
+
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .our-partner__item {
