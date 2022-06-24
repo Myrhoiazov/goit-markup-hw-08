@@ -12,14 +12,14 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -31,7 +31,7 @@
   .contact__item {
     margin-bottom: 9px;
     
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
       text-align: center;
     }
 
@@ -64,7 +64,7 @@
 
   
 
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }
@@ -81,7 +81,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-bottom: 0;
     text-align: left;
@@ -139,22 +139,22 @@
 
 .footer__form {
   .footer__title {
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 480px) {
       text-align: center;
     }
 
     @media screen and (min-width: 960px) {
-      text-align: сутеук;
+      text-align: center;
     }
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
   }
 }
 
 .footer__form {
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
 }
@@ -180,7 +180,7 @@
 
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
 
     width: 358px;
@@ -192,7 +192,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     text-align: left;
   }
 
@@ -226,7 +226,7 @@
     background-color: rgb(18, 18, 18);
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 12px;
   }
 }
